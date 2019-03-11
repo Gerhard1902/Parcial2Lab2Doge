@@ -16,7 +16,7 @@ class DogeMeme extends Component {
     	
       <div className="Doge">
        	<p>{this.state.message1}</p>
-       	<p className="lol">{this.state.message2}</p>
+       	<p>{this.state.message2}</p>
       </div>
     );
   }
