@@ -7,8 +7,8 @@ class DogeMeme extends Component {
   constructor(props){
   	super(props);
   	this.state={
-  		message1: this.props.top,
-  		message2: this.props.bottom
+  		message1: this.props.top.toUpperCase(),
+  		message2: this.props.bottom.toUpperCase()
   	};
   }
   render() {
