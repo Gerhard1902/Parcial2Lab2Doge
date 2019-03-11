@@ -7,8 +7,8 @@ class DogeMeme extends Component {
   constructor(props){
     super(props);
     this.state={
-      message1: "",
-      message2: "",
+      message1: this.props.top.toUpperCase(),
+      message2: this.props.bottom.toUpperCase(),
     };
      // This binding is necessary to make `this` work in the callback
      //https://reactjs.org/docs/handling-events.html
@@ -27,6 +27,7 @@ class DogeMeme extends Component {
         <form>
           <input type="text"  onChange={this.handleFirst} />
           <input type="text"  onChange={this.handleSecond} />
+          <button onClick={()=> this.setState({message1:"I´M A PROGRAMMER", message2:"NO, I WON´T FIX YOUR COMPUTER"}) }>RESET</button>
         </form>
         <div className="Doge">
           <p>{this.state.message1}</p>
