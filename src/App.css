@@ -1,33 +1,19 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+.Doge{
+  background-image: url("./doge.jpg");
+  height:450px;
+  width: 800px;
+  background-size: auto;
+  background-repeat: no-repeat;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+   color:white;
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke: 2px black;
+    font-size: 24pt;  
 }
